@@ -82,7 +82,7 @@ class App extends Component {
 				<div className="search-container">
 					<input
 						type="text"
-						className="seatch-input"
+						className="search-input"
 						placeholder="Search for a color"
 						value={this.state.searchInput}
 						onChange={this.handleSearchChange}
@@ -105,6 +105,10 @@ class App extends Component {
 						</li>
 					))}
 				</ul>
+
+				<button className="refresh-btn" onClick={this.generateColorPalette}>
+					Refresh Palette
+				</button>
 			</div>
 		);
 	}
